@@ -9,7 +9,7 @@ on:
     
 env:              
   ROM_URL: 'https://hugeota.d.miui.com/V12.5.7.0.RGICNXM/miui_PICASSO_V12.5.7.0.RGICNXM_02c694af6e_11.0.zip'
-  Zip_name: 'MIUI_VietSub_PICASSO_V12.5.7.0.RGICNXM_02c694af6e_11.0.zip'
+  Zip_name: 'MIUI_VietSub_PICASSO_V12.5.7.0.20212811zip'
   
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
             sudo apt-get install -y git wget zip unzip img2simg simg2img brotli
        - name: Cloning...
          run: |
-             git clone -b action https://github.com/buihien224/MIUI_VIETSUB.git $GITHUB_WORKSPACE/MIUI_VIETSUB
+             git clone -b action https://github.com/MaiLinkKute/MIUI_VIETSUB.git $GITHUB_WORKSPACE/MIUI_VIETSUB
            
        - name: Download zip... and run
          run: |
